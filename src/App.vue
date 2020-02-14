@@ -82,6 +82,11 @@
         this.initializer();
 
         let vmessData = this.vmessData;
+
+        if (vmessData === "") {
+          return false;
+        }
+
         if (vmessData.indexOf("vmess://") === -1) {
           this.error.vmessFormatError = true;
           return false;
