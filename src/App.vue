@@ -32,6 +32,7 @@
         <p v-if="parsedJsonHTML === ''">请先粘贴vmess地址</p>
         <div v-else class="json-display-container">
           <pre><code v-html="parsedJsonHTML" /></pre>
+          <Button long type="primary" v-bind:data-content="JSON.stringify(parsedJsonObject)" v-on:click="copyToClipboard">复制</Button>
         </div>
       </div>
 
