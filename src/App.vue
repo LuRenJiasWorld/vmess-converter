@@ -199,6 +199,11 @@
     margin-top: 60px;
   }
 
+  .line {
+    margin: 40px 20vw;
+    border-bottom: 1px solid #c7c7c7;
+  }
+
   #app-icon {
     width: 200px;
     height: 200px;
@@ -219,15 +224,6 @@
     vertical-align: bottom;
   }
 
-  .step-title {
-    margin: 20px 10px;
-  }
-
-  .line {
-    margin: 40px 20vw;
-    border-bottom: 1px solid #c7c7c7;
-  }
-
   #steps-container {
     width: calc(100vw - 2 * 20px);
     max-width: 500px;
@@ -238,6 +234,14 @@
 
   .steps-block {
     margin: 40px 0;
+  }
+
+  .step-title {
+    margin: 20px 10px;
+  }
+
+  #vmess-input-textarea {
+    margin-bottom: 10px;
   }
 
   .config-list {
@@ -251,10 +255,6 @@
     width: 60px;
     line-height: 32px;
     text-align: right;
-  }
-
-  #vmess-input-textarea {
-    margin-bottom: 10px;
   }
 
   .config-list .config-text {
