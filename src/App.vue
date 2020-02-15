@@ -4,8 +4,8 @@
 
     <h1>vmess链接在线转换</h1>
     <p class="subtitle">将vmess的链接转换为人类可读的配置</p>
-    <p class="subtitle">便于不支持vmess链接的客户端使用</p>
-    <p class="subtitle">版本号：v0.6.0</p>
+    <p class="subtitle">便于不支持vmess链接的v2Ray客户端使用</p>
+    <p class="subtitle">版本号：v0.6.5</p>
 
     <hr class="line" />
 
@@ -47,7 +47,7 @@
 
     <div id="footer">
       <img src="./assets/logo.png" style="width: 60px;">
-      <p>vmess链接在线解码</p>
+      <p>vmess链接在线转换</p>
       <p>Author: <a href="https://github.com/LuRenJiasWorld/">LuRenJiasWorld</a></p>
       <p>Email: <a href="mailto:loli@lurenjia.in">loli@lurenjia.in</a></p>
     </div>
