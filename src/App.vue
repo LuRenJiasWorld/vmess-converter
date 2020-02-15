@@ -166,19 +166,21 @@
       copyToClipboard(event) {
         const content = event.currentTarget.dataset.content;
 
-        const copyStep = new Promise(function(resolve, reject) {
-          try {
-            if (copy(content)) {
-              resolve();
+        const copyStep = function (content) {
+          return new Promise(function(resolve, reject) {
+            try {
+              if (copy(content)) {
+                resolve();
+              }
+            } catch(e) {
+              reject();
             }
-          } catch(e) {
-            reject();
-          }
-        });
+          });
+        };
 
         var that = this;
 
-        copyStep.then(function() {
+        copyStep(content).then(function() {
           that.$Message.success({
             content: "复制成功！",
             background: true
